@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Test: Zaburzenia odżywiania</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+    h2 { color: #b22222; }
+    .question { margin-bottom: 20px; }
+    .result { margin-top: 20px; font-weight: bold; }
+    button { padding: 10px 15px; margin-top: 10px; }
+    .correct { background-color: #c8e6c9; }
+    .incorrect { background-color: #ffcdd2; }
+  </style>
+</head>
+<body>
+  <h2>Test interaktywny: Zaburzenia odżywiania</h2>
+  <form id="quizForm">
+    <div class="question" data-question="q1">
+      <p>1. Do zmiany nawyków zdrowotnych wg. modelu J. Ogden konieczne jest:</p>
+      <label><input type="radio" name="q1" value="a"> a) Postrzeganie zmiany jako korzystnej</label><br>
+      <label><input type="radio" name="q1" value="b"> b) Kontrola zewnętrzna</label><br>
+      <label><input type="radio" name="q1" value="c"> c) Ugodowość</label><br>
+      <label><input type="radio" name="q1" value="d"> d) Negatywne przekonania</label>
+    </div>
+    <div class="question" data-question="q2">
+      <p>2. Niezadowolenie z ciała NIE wiąże się bezpośrednio z:</p>
+      <label><input type="radio" name="q2" value="a"> a) Zniekształceniami obrazu</label><br>
+      <label><input type="radio" name="q2" value="b"> b) Niezgodnością z ideałem</label><br>
+      <label><input type="radio" name="q2" value="c"> c) Negatywną reakcją</label><br>
+      <label><input type="radio" name="q2" value="d"> d) Wyborami żywieniowymi</label>
+    </div>
+    <div class="question" data-question="q3">
+      <p>3. Pregoreksja oznacza:</p>
+      <label><input type="radio" name="q3" value="a"> a) Anoreksję przed ślubem</label><br>
+      <label><input type="radio" name="q3" value="b"> b) Odchudzanie i alkohol</label><br>
+      <label><input type="radio" name="q3" value="c"> c) Anoreksję w ciąży</label><br>
+      <label><input type="radio" name="q3" value="d"> d) Zjadanie przedmiotów</label>
+    </div>
+    <div class="question" data-question="q4">
+      <p>4. Najbardziej „męską” odmianą anoreksji jest:</p>
+      <label><input type="radio" name="q4" value="a"> a) Ortoreksja</label><br>
+      <label><input type="radio" name="q4" value="b"> b) Alkoreksja</label><br>
+      <label><input type="radio" name="q4" value="c"> c) Bigoreksja</label><br>
+      <label><input type="radio" name="q4" value="d"> d) Permareksja</label>
+    </div>
+    <div class="question" data-question="q5">
+      <p>5. Otyłość olbrzymia oznacza BMI:</p>
+      <label><input type="radio" name="q5" value="a"> a) powyżej 40</label><br>
+      <label><input type="radio" name="q5" value="b"> b) 35–40</label><br>
+      <label><input type="radio" name="q5" value="c"> c) powyżej 30</label><br>
+      <label><input type="radio" name="q5" value="d"> d) powyżej 50</label>
+    </div>
+    <div class="question" data-question="q6">
+      <p>6. Głównym mechanizmem powstawania otyłości są:</p>
+      <label><input type="radio" name="q6" value="a"> a) Lenistwo</label><br>
+      <label><input type="radio" name="q6" value="b"> b) Geny</label><br>
+      <label><input type="radio" name="q6" value="c"> c) Błędne koła przekarmiania i niedojadania</label><br>
+      <label><input type="radio" name="q6" value="d"> d) Ciałopozytywność</label>
+    </div>
+    <div class="question" data-question="q7">
+      <p>7. Od czego zaczynamy pracę z osobą z otyłością?</p>
+      <label><input type="radio" name="q7" value="a"> a) Zniekształcenia poznawcze</label><br>
+      <label><input type="radio" name="q7" value="b"> b) Uświadomienie i motywacja</label><br>
+      <label><input type="radio" name="q7" value="c"> c) Krytyka stylu życia</label><br>
+      <label><input type="radio" name="q7" value="d"> d) Psychoedukacja o nawrotach</label>
+    </div>
+    <div class="question" data-question="q8">
+      <p>8. Kryterialny objaw anoreksji to:</p>
+      <label><input type="radio" name="q8" value="a"> a) Zachowania restrykcyjne</label><br>
+      <label><input type="radio" name="q8" value="b"> b) Menstruacja</label><br>
+      <label><input type="radio" name="q8" value="c"> c) Rodzaj jedzenia</label><br>
+      <label><input type="radio" name="q8" value="d"> d) Lanugo</label>
+    </div>
+    <div class="question" data-question="q9">
+      <p>9. W DSM-V usunięto z kryteriów anoreksji:</p>
+      <label><input type="radio" name="q9" value="a"> a) Niską masę ciała</label><br>
+      <label><input type="radio" name="q9" value="b"> b) Zaburzenia menstruacji</label><br>
+      <label><input type="radio" name="q9" value="c"> c) Zniekształcenia ciała</label><br>
+      <label><input type="radio" name="q9" value="d"> d) Lęk przed przytyciem</label>
+    </div>
+    <div class="question" data-question="q10">
+      <p>10. Pracę ambulatoryjną z osobą z anoreksją można podjąć, gdy:</p>
+      <label><input type="radio" name="q10" value="a"> a) BMI &lt;12</label><br>
+      <label><input type="radio" name="q10" value="b"> b) BMI &lt;15 + powikłania</label><br>
+      <label><input type="radio" name="q10" value="c"> c) BMI &gt;15 + zaburzenia psychiczne</label><br>
+      <label><input type="radio" name="q10" value="d"> d) BMI &gt;15, brak powikłań i motywacja</label>
+    </div>
+    <button type="button" onclick="checkAnswers()">Sprawdź odpowiedzi</button>
+    <div class="result" id="result"></div>
+  </form>
+
+  <script>
+    const correct = {
+      q1: 'a', q2: 'd', q3: 'c', q4: 'c', q5: 'a',
+      q6: 'c', q7: 'b', q8: 'a', q9: 'b', q10: 'd'
+    };
+
+    function checkAnswers() {
+      let score = 0;
+      for (let i = 1; i <= 10; i++) {
+        const name = `q${i}`;
+        const correctVal = correct[name];
+        const questionDiv = document.querySelector(`[data-question=${name}]`);
+        const radios = questionDiv.querySelectorAll('input[type=radio]');
+
+        radios.forEach(r => {
+          r.parentElement.classList.remove('correct', 'incorrect');
+          if (r.value === correctVal) {
+            r.parentElement.classList.add('correct');
+          } else if (r.checked) {
+            r.parentElement.classList.add('incorrect');
+          }
+        });
+
+        const selected = questionDiv.querySelector('input:checked');
+        if (selected && selected.value === correctVal) score++;
+      }
+      document.getElementById('result').innerText = `Twój wynik: ${score}/10 punktów.`;
+    }
+  </script>
+</body>
+</html>
